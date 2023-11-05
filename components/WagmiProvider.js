@@ -1,10 +1,9 @@
 "use client";
 import { WagmiConfig, createConfig, configureChains, mainnet } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import { goerli } from "wagmi/chains";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [goerli],
+  [mainnet],
   [publicProvider()]
 );
 
